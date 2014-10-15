@@ -11,7 +11,7 @@
      
 	</head>
 	<body>
-		<h2>Coha's to do list </h2>
+		<h2>Coha's to do list GIT </h2>
 		<form name="checkListForm"> Zadatak : 
 			<input type="text" name="checkListItem"/>
 		</form>
