@@ -11,14 +11,14 @@
      
 	</head>
 	<body>
-		<h2>Coha's to do list GIT </h2>
-		<form name="checkListForm"> Zadatak : 
+		<h2>Coha's to do list </h2>
+		<form name="checkListForm"> Task : 
 			<input type="text" name="checkListItem"/>
 		</form>
-		<p >Datum:   <input type="text" id="datepicker"></p>
-		<div class="gumb" id="button">Dodaj</div>
-		<div class="gumb" id="button2">Ukloni Sve</div>
-		<div class="gumb" id="button3">Ukloni odabrano</div>
+		<p >Due date:   <input type="text" id="datepicker"></p>
+		<div class="gumb" id="button">Add</div>
+		<div class="gumb" id="button2">Remove all</div>
+		<div class="gumb" id="button3">Remove checked</div>
 		<br/>
 		<div id="wrapper">
 		<div class="list"></div> 
