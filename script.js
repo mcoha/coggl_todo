@@ -1,8 +1,8 @@
 $(document).ready(function(){ 
     var p=0;
     
-// Glavna funckija//
-// Klik miša
+// Main//
+// Filling the list by mouse click
     $('#button').click(function(){
 
       var datum =$('#datepicker').val();
@@ -17,7 +17,7 @@ $(document).ready(function(){
         });
     
     $('form').submit(function () {
-// Enter na formu
+// Filling the list by pressing enter on the form
 
 if ($('input').val() !== '') {
   var datum =$('#datepicker').val();
@@ -37,14 +37,14 @@ if ($('input').val() !== '') {
 
     
     
-//brisanje svega
+//Delete all
     $(document).on('click','#button2',function(){ 
 
        for (i=0;i<p;i++){$('.item').remove();}
 
     });
 
-  //brisanje onog kliknutoga
+  //Deleting the items with the selected checkboxes
   
 function cleanup() {
 
