@@ -10,7 +10,7 @@ $(document).ready(function(){
        if ($('input').val() !== '') {
        	var toAdd=$('input[name=checkListItem]').val();
         console.log("datum je",datum);
-       $(".list").append('<div class="item">'  +toAdd +  "     <br>  " + datum +'<input class="check" type="checkbox" ></input>'+  '</div>');
+       $(".list").append('<div class="item">'  +toAdd  +'<input class="check" type="checkbox" ></input>' + "<br> " + datum +  '</div>');
         p+=1;}
         $('input').val('');
     return false;
@@ -23,7 +23,7 @@ if ($('input').val() !== '') {
   var datum =$('#datepicker').val();
     	var toAdd=$('input[name=checkListItem]').val();
      
-        $(".list").append('<div class="item">'  +toAdd +  "     <br>  " + datum +'<input class="check" type="checkbox" ></input>'+  '</div>');
+       $(".list").append('<div class="item">'  +toAdd  +'<input class="check" type="checkbox" ></input>' + "<br> " + datum +  '</div>');
         p+=1;
         
         }

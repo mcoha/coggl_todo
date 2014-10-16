@@ -1,18 +1,24 @@
 h2 {
     font-family:arial;
 }
+title {
 
+	font-family: arial;
+	font-weight:bold;
+	text-align:center;
+}
 body {background-color: #E9EAED}
 
 form {
     display: inline-block;
 }
 
+
 #button{
     display: inline-block;
     height:20px;
 	width:70px;
-	background-color:#cc0000;
+	background-color:#F8B64A;
 	font-family:arial;
 	font-weight:bold;
 	color:#ffffff;
@@ -26,7 +32,7 @@ form {
     display: inline-block;
     height:20px;
 	width:110px;
-	background-color:#cc0000;
+	background-color:#F8B64A;
 	font-family:arial;
 	font-weight:bold;
 	color:#ffffff;
@@ -40,7 +46,7 @@ form {
     display: inline-block;
     height:20px;
 	width:150px;
-	background-color:#cc0000;
+	background-color:#F8B64A;
 	font-family:arial;
 	font-weight:bold;
 	color:#ffffff;
@@ -54,7 +60,7 @@ form {
 #wrapper {
 
 height:auto;
-width:400px;
+width:300px;
 
 }
 .item {
@@ -73,8 +79,7 @@ font-weight:bolder;
 color:black;
 
 }
-.check {
-position: right.
-width : 100px;
 
+input[type=checkbox] {
+    float:right;
 }

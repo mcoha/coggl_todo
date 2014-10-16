@@ -15,7 +15,7 @@
 		<form name="checkListForm"> Task : 
 			<input type="text" name="checkListItem"/>
 		</form>
-		<p >Due date:   <input type="text" id="datepicker"></p>
+		<p> Due date:   <input type="text" id="datepicker"></p>
 		<div class="gumb" id="button">Add</div>
 		<div class="gumb" id="button2">Remove all</div>
 		<div class="gumb" id="button3">Remove checked</div>
