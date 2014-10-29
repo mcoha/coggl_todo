@@ -5,12 +5,15 @@ $(document).ready(function(){
 // Filling the list by mouse click
     $('#button').click(function(){
        var color = random();
+   console.log("color je", color, " temp je", temp);
+   while (temp===color) {color = random();}
+   temp=color;
       var datum =$('#datepicker').val();
      
        if ($('input').val() !== '') {
        	var toAdd=$('input[name=checkListItem]').val();
         console.log("datum je",datum);
-       $(".list").append('<div class="item" style="background-color:'+ color + '">'  +toAdd  +'<input class="check" type="checkbox" ></input>' + "<br> " + datum +  '</div>');
+       $(".list").append('<div class="item" draggable="true" style="background-color:'+ color + '">'  +toAdd  +'<input class="check" type="checkbox" ></input>' + "<br> " + datum +  '</div>');
         p+=1;}
         $('input').val('');
     return false;
@@ -21,10 +24,13 @@ $(document).ready(function(){
 
 if ($('input').val() !== '') {
   var color = random();
+   console.log("color je", color, " temp je", temp);
+   while (temp===color) {color = random();}
+   temp=color;
   var datum =$('#datepicker').val();
     	var toAdd=$('input[name=checkListItem]').val();
      
-       $(".list").append('<div class="item" style="background-color:'+ color + '">'  +toAdd  +'<input class="check" type="checkbox" ></input>' + "<br> " + datum +  '</div>');
+       $(".list").append('<div class="item" draggable="true" style="background-color:'+ color + '">'  +toAdd  +'<input class="check" type="checkbox" ></input>' + "<br> " + datum +  '</div>');
         p+=1;
         
         }
@@ -67,24 +73,26 @@ $('#button3').click(function() {
 
 
   // datepicker setup
-$( "#datepicker" ).datepicker();
+$(function() {
+	$("#datepicker").datepicker({minDate: 0});
+});
 $( "#datepicker" ).datepicker("option", "dateFormat", "dd.mm.yy.");
 
  // Function for randomising the color of the list item
-function random() {
-
+ var temp="white";
+ function random() {
  randic=Math.floor((Math.random() * 5) + 1); 
 switch (randic) {
 
   case 1 : return "#757670";
            break;
-  case 2 : return "red";
+  case 2 : return "#F24A4A";
            break;
-  case 3 : return "blue";
+  case 3 : return "#CCCCFF";
            break;
-  case 4 : return "yellow";
+  case 4 : return "#4C7895";
            break;
-  case 5 : return "orange";
+  case 5 : return "#EAAFE3";
            break;
 
 }
