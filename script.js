@@ -99,5 +99,15 @@ switch (randic) {
 
 }
 
+// Sortable list
+$(function() {
+
+    $( ".list" ).sortable();
+
+    $( ".list" ).disableSelection();
+
+  });
+
+
 });
     
