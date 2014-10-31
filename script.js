@@ -75,8 +75,9 @@ $('#button3').click(function() {
   // datepicker setup
 $(function() {
 	$("#datepicker").datepicker({minDate: 0});
+	$( "#datepicker" ).datepicker("option", "dateFormat", "dd.mm.yy.");
 });
-$( "#datepicker" ).datepicker("option", "dateFormat", "dd.mm.yy.");
+
 
  // Function for randomising the color of the list item
  var temp="white";
