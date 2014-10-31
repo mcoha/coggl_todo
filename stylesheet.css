@@ -83,3 +83,10 @@ color:black;
 input[type=checkbox] {
     float:right;
 }
+
+
+.item:hover {
+
+font-weight:bolder;
+border-radius: 10px;
+}
