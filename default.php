@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html>
     <head>
+<html>
     	<title>Coha's  to do</title>
        <link rel="stylesheet" type="text/css" href="stylesheet.css"/>
         <script src="jquery-1.11.1.js"></script>
@@ -8,6 +8,7 @@
        <link rel="stylesheet" href="jquery-ui-1.11.1.custom/jquery-ui.min.css">
 
        <script src="jquery-ui-1.11.1.custom/jquery-ui.min.js"></script>
+	   
      
 	</head>
 	<body>
@@ -27,3 +28,4 @@
        
 	</body>
 </html>
+<form action="/create_post/" method="POST" id="post-form">
